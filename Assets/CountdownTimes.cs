@@ -38,7 +38,7 @@ public class CountdownTimes : MonoBehaviour
             {
                 countdownText.text = "Time Left: " + Mathf.Round(currentTime).ToString(); // แสดงเวลาที่เหลือใน TextMeshProUGUI
             }
-            
+
         }
     }
 
