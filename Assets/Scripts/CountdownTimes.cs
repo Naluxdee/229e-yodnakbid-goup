@@ -33,6 +33,8 @@ public class CountdownTimes : MonoBehaviour
                 countdownText.text = "Lose"; // เปลี่ยนเป็น "Lose" เมื่อเวลาหมด
                 ShowLoseUI(); // แสดงหน้า UI "Lose"
                 StopPlayerMovement(); // หยุดการเคลื่อนไหวของตัวละคร
+                Fail();
+                
             }
             else
             {
@@ -53,5 +55,9 @@ public class CountdownTimes : MonoBehaviour
         player.GetComponent<playerControl>().enabled = false;
     }
 
+    public void Fail()
+    {
+        SceneManager.LoadScene(4);
+    }
 
 }

@@ -13,7 +13,7 @@ public class End : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // ‚À≈¥ Scene ∂—¥‰ª
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 }
